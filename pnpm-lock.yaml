@@ -1,9 +1,6 @@
 lockfileVersion: '6.0'
 
 dependencies:
-  '@picocss/pico':
-    specifier: ^1.5.7
-    version: 1.5.7
   '@pinia/nuxt':
     specifier: ^0.4.7
     version: 0.4.7(typescript@5.0.3)(vue@3.2.47)
@@ -874,10 +871,6 @@ packages:
       - eslint-import-resolver-webpack
       - supports-color
     dev: true
-
-  /@picocss/pico@1.5.7:
-    resolution: {integrity: sha512-RygdXNlSXieAs9jMw/AeqA1ki1kldgEYbRn8BnYZIPfRTM5NWZ4uVzMK6uMPhYlRjoT5wD/OplZvIefnCqyDCQ==}
-    dev: false
 
   /@pinia/nuxt@0.4.7(typescript@5.0.3)(vue@3.2.47):
     resolution: {integrity: sha512-ifgA9PO/jmPlK1e/HtkrZa7OMSL8EUOpo8Z1O5vNLRr/OZ42kKGEaY1NbIoCz6dIf/pbkATTNHJmcrlPCo3zSA==}
