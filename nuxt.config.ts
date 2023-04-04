@@ -5,15 +5,10 @@ export default defineNuxtConfig({
         head: {
             charset: 'utf-8',
             title: 'kanbanList-admin',
-            link: [
-                {
-                    href: 'https://unpkg.com/@picocss/pico@1.*/css/pico.min.css',
-                    rel: 'stylesheet',
-                },
-            ],
             htmlAttrs: {
                 lang: 'ko',
             },
         },
     },
+    css: ['@/assets/styles/reset.css'],
 });
