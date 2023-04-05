@@ -13,9 +13,13 @@
   </div>
 </template>
 <script setup lang="ts">
+import { useAuthStore } from '@/stores/auth';
+
 const router = useRouter();
+const authStore = useAuthStore();
 const logoutHandler = () => {
-  //   router.push('/login');
+  authStore.kanbanLoginState = 'false';
+  router.replace('/login');
 };
 </script>
 <style lang="scss" scoped>
