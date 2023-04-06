@@ -6,7 +6,7 @@ export default defineNuxtRouteMiddleware((to, from) => {
 
   if (to.path === '/login') {
     if (authStore.kanbanLoginState === 'true') return navigateTo('/');
-  } else if (authStore.kanbanLoginState === 'false') {
+  } else if (authStore.kanbanLoginState === 'false' || authStore.kanbanLoginState === '') {
     return navigateTo('/login');
   }
   return true;
