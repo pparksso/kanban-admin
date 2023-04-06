@@ -19,7 +19,7 @@ const router = useRouter();
 const authStore = useAuthStore();
 const logoutHandler = () => {
   authStore.kanbanLoginState = 'false';
-  router.replace('/login');
+  navigateTo('/login');
 };
 </script>
 <style lang="scss" scoped>

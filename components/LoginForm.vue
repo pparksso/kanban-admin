@@ -16,14 +16,13 @@ import { useAuthStore } from '@/stores/auth';
 const authStore = useAuthStore();
 const idRef = ref('');
 const pwRef = ref('');
-const router = useRouter();
 
 const submitHandler = () => {
   if (idRef.value === 'kanban' && pwRef.value === '12341234') {
-    console.log(idRef.value, pwRef.value);
     authStore.kanbanLoginState = 'true';
-    router.push('/');
+    navigateTo('/');
   } else {
+    // eslint-disable-next-line no-alert
     alert('아이디와 비밀번호를 확인해주세요.');
   }
 };

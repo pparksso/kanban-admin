@@ -11,9 +11,6 @@
   </section>
 </template>
 <script setup lang="ts">
-definePageMeta({
-  middleware: ['auth'],
-});
 const route = useRoute();
 // console.log(route.params.name);
 </script>
